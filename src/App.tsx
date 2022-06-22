@@ -1,10 +1,6 @@
 // 导入路由
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from 'react-router-dom'
+import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import { customHistory } from './utils/history'
 
 // 导入页面组件
 import Login from './pages/Login'
@@ -13,7 +9,7 @@ import Layout from './pages/Layout'
 // 配置路由规则
 function App() {
   return (
-    <Router>
+    <Router history={customHistory}>
       <div className="app">
         <Switch>
           <Route exact path="/" render={() => <Redirect to="/home" />} />

@@ -15,3 +15,5 @@
 安装 px 转 vw 的包：yarn add -D postcss-px-to-viewport
 
 安装 redux 相关的包：yarn add redux react-redux redux-thunk@2.3.0 redux-devtools-extension axios
+
+安装 history：yarn add history@4.10.1
