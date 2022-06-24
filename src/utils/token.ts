@@ -3,7 +3,7 @@ import { Token } from '@/types/data'
 // 使用常量来存储 key
 const KEY = 'geek-h5-token'
 
-export const getToken = (): Token => {
+export const getToken = () => {
   const value = localStorage.getItem(KEY)
   if (value) {
     return JSON.parse(value)
