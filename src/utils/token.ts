@@ -1,4 +1,4 @@
-import { Token } from '@/types/data'
+// import { Token } from '@/types/data'
 
 // 使用常量来存储 key
 const KEY = 'geek-h5-token'
@@ -10,7 +10,7 @@ export const getToken = () => {
   }
 }
 
-export const setToken = (token: Token): void => {
+export const setToken = (token: unknown): void => {
   localStorage.setItem(KEY, JSON.stringify(token))
 }
 
